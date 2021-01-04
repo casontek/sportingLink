@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pix"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:civ_border_color="#707070"
+        app:civ_border_width="0.23dp"
+        android:src="@drawable/profile_pix"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7DC1BC"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/teams"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="13dp"
+        android:paddingEnd="0dp"
+        android:textColor="#CC000000"
+        android:textSize="21sp"
+        android:text="Manchester City Vs Arsenal FC"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintLeft_toRightOf="@id/profile_pix"
+        app:layout_constraintRight_toLeftOf="@id/post_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/match_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teams"
+        android:paddingStart="13dp"
+        android:paddingEnd="0dp"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:text="14/04/2020  3:00 GMT"
+        app:layout_constraintTop_toBottomOf="@id/teams"
+        app:layout_constraintLeft_toRightOf="@id/profile_pix"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="start|center"
+        android:paddingStart="13dp"
+        android:text="Home win"
+        android:textAllCaps="false"
+        android:textColor="#739794"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/profile_pix"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/match_time" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="13dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="4"
+        android:textSize="18sp"
+        android:typeface="sans"
+        app:layout_constraintLeft_toRightOf="@id/profile_pix"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tip" />
+
+    <View
+        android:id="@+id/view_010"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="45dp"
+        android:background="#808080"
+        app:layout_constraintTop_toBottomOf="@id/hint" />
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/share"
+        android:background="@drawable/share_ico01"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view_010"
+        />
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/tip_status"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/pending010"
+        app:layout_constraintRight_toLeftOf="@id/vote"
+        app:layout_constraintBottom_toTopOf="@id/view_010"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_liked"
+        android:text="123"
+        android:textSize="12sp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@id/vote"
+        app:layout_constraintTop_toTopOf="@id/vote"/>
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/vote"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/like_ico02"
+        app:layout_constraintRight_toLeftOf="@id/share"
+        app:layout_constraintBottom_toTopOf="@id/view_010" />
+
+    <TextView
+        android:id="@+id/league"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="13dp"
+        android:paddingBottom="2dp"
+        android:textSize="14sp"
+        android:text="English Premier League"
+        android:gravity="start"
+        app:layout_constraintStart_toEndOf="@id/profile_pix"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

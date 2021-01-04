@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"sportinglink": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"sportinglink": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

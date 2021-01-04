@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "632342827691",
+    "firebase_url": "https://betlink-6d3c3.firebaseio.com",
+    "project_id": "betlink-6d3c3",
+    "storage_bucket": "betlink-6d3c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632342827691:android:465da8a7bb4da7fe661dee",
+        "android_client_info": {
+          "package_name": "com.mycornership.betlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632342827691-466j5hnrvq099an63f6d1j875ttooo54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycornership.betlink",
+            "certificate_hash": "bc05c179ef58f1d7a85b4213dc3d836e59b84785"
+          }
+        },
+        {
+          "client_id": "632342827691-e2qvt1g116va3usp27po1jl2on6v1ltk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycornership.betlink",
+            "certificate_hash": "63ca3fb9b2575f481fae02ad49201d7c45133a1c"
+          }
+        },
+        {
+          "client_id": "632342827691-75nb77ss1bfr1osb48bq7bu53hjkui8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA-6jPF8motom6F4UlycugamH3nTxMvCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632342827691-75nb77ss1bfr1osb48bq7bu53hjkui8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+{
+    "identityPoolName": "sportinglink_identitypool",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "sportia407fd02",
+    "userPoolName": "sportinglink_userpool",
+    "autoVerifiedAttributes": [
+        "phone_number"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "sportingLink verification code {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": "8",
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "address",
+        "phone_number",
+        "preferred_username"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": "120",
+    "userpoolClientWriteAttributes": [
+        "email",
+        "address",
+        "phone_number",
+        "preferred_username"
+    ],
+    "userpoolClientReadAttributes": [
+        "address",
+        "email",
+        "phone_number",
+        "preferred_username"
+    ],
+    "userpoolClientLambdaRole": "sportia407fd02_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "sportinglink",
+    "thirdPartyAuth": false,
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": "{}",
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "dependsOn": []
+}

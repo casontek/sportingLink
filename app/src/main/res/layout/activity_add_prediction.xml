@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context="com.mycornership.betlink.activities.AddPredictionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wlc"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/addtip"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lg"
+        android:textSize="16sp"
+        android:text="@string/league"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/wlc" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner_league"
+        android:entries="@array/tournaments"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintTop_toBottomOf="@id/lg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mc"
+        android:textSize="16sp"
+        android:text="@string/match"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_league" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner_match"
+        android:autofillHints="Match"
+        android:entries="@array/empty_spinner"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintTop_toBottomOf="@id/mc" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat"
+        android:textSize="16sp"
+        android:text="@string/category_tip"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/spinner_match" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner_cat"
+        android:autofillHints="Match"
+        android:spinnerMode="dialog"
+        android:visibility="gone"
+        android:entries="@array/tip_category"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintTop_toBottomOf="@id/cat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prediction"
+        android:textSize="16sp"
+        android:text="@string/tip"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_cat" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner_tip"
+        android:autofillHints="Match"
+        android:spinnerMode="dialog"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintTop_toBottomOf="@id/prediction" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_tip">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:hint="Home Score"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/h_score"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:hint="Away Score"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/layout1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/a_score"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:textSize="16sp"
+        android:text="@string/hint"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/rlt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip_hint"
+        android:lines="3"
+        android:maxHeight="150dp"
+        android:gravity="start"
+        android:hint="@string/detail"
+        android:maxEms="150"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/text_area"
+        app:layout_constraintTop_toBottomOf="@id/hint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/btn_submit"
+        android:text="@string/submit"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#26C6DA"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/loading_bar"
+        android:layout_marginTop="100dp"
+        android:theme="@style/MyBar"
+        android:background="@drawable/handler_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

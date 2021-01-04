@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/app_logo"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/app_logo01"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:hint="@string/user"
+        android:layout_marginTop="30dp"
+        android:theme="@style/myInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@id/app_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:hint="@string/pass"
+        android:layout_marginTop="15dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:theme="@style/myInput"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/layout1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/btn_login"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/blue"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        app:layout_constraintTop_toBottomOf="@id/layout2"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_btn"
+        android:text="@string/forgot_password"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:paddingEnd="0dp"
+        android:paddingTop="0dp"
+        android:gravity="top"
+        android:textColor="@color/blue2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_acct_new"
+        android:textColor="@color/blue2"
+        android:text="@string/sign_up"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:gravity="top"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"/>
+
+    <ProgressBar
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/loading_bar"
+        android:layout_marginTop="85dp"
+        android:elevation="3dp"
+        android:layout_marginEnd="20dp"
+        android:theme="@style/MyBar"
+        android:background="@drawable/handler_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

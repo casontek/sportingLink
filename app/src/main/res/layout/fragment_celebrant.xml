@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/top_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="16sp"
+            android:text="@string/today_celeb"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:paddingStart="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/celeb_recycler"
+        android:layout_marginTop="?actionBarSize"/>
+
+    <ProgressBar
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/loading_bar"
+        android:layout_marginTop="80dp"
+        android:theme="@style/MyBar"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_celeb"
+        android:layout_marginTop="140dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/sm"
+            android:background="@drawable/c1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:gravity="center"
+            android:text="@string/no_celeb"
+            android:textSize="21sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#1D8076"
+            android:layout_below="@id/sm" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

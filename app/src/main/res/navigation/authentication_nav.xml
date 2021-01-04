@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/authentication_nav"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.mycornership.betlink.fragments.auth.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.mycornership.betlink.fragments.auth.Register"
+        android:label="Register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_register_to_confirmAccount"
+            app:destination="@id/confirmAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.mycornership.betlink.fragments.auth.ForgotPassword"
+        android:label="ForgotPassword" >
+        <action
+            android:id="@+id/action_forgotPassword_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_forgotPassword_to_forgotpasswordConfirm"
+            app:destination="@id/forgotpasswordConfirm" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmAccount"
+        android:name="com.mycornership.betlink.fragments.auth.ConfirmAccount"
+        android:label="ConfirmAccount" >
+        <action
+            android:id="@+id/action_confirmAccount_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotpasswordConfirm"
+        android:name="com.mycornership.betlink.fragments.auth.ForgotpasswordConfirm"
+        android:label="ForgotpasswordConfirm" >
+        <action
+            android:id="@+id/action_forgotpasswordConfirm_to_login"
+            app:destination="@id/login" />
+    </fragment>
+</navigation>

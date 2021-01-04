@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tips"
+        android:icon="@drawable/bottom_tips"
+        android:title="@string/title_tips" />
+
+    <item
+        android:id="@+id/navigation_news"
+        android:icon="@drawable/bottom_news"
+        android:title="@string/title_news" />
+
+    <item
+        android:id="@+id/navigation_matches"
+        android:icon="@drawable/bottom_matches"
+        android:title="@string/title_matches" />
+
+
+    <item
+        android:id="@+id/navigation_celeb"
+        android:icon="@drawable/celeb"
+        android:title="@string/title_celeb" />
+
+    <item
+        android:id="@+id/navigation_videos"
+        android:icon="@drawable/bottom_videos"
+        android:title="@string/title_video" />
+
+</menu>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycornership.betlink.activities.PredictionViewActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:liftOnScroll="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleGravity="left"
+            app:expandedTitleMarginTop="30dp"
+            app:expandedTitleMarginStart="14dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/bck1"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentTop="true"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/my_profile_px"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_alignParentEnd="true"
+                    app:civ_border_color="#FAFAFA"
+                    app:civ_border_width="5dp"
+                    android:src="@drawable/profile"/>
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/vw1"
+                    android:background="@drawable/user_role"
+                    android:layout_below="@id/bck1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_tag"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:textColor="#CC000000"
+                    android:layout_below="@id/bck1"
+                    android:layout_alignTop="@id/vw1"
+                    android:layout_alignBottom="@id/vw1"
+                    android:layout_toEndOf="@id/vw1"/>
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/vw2"
+
+                    android:background="@drawable/total_post"
+                    android:layout_below="@id/vw1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_post"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:textColor="#CC000000"
+                    android:layout_alignTop="@id/vw2"
+                    android:layout_alignBottom="@id/vw2"
+                    android:layout_toEndOf="@id/vw2"/>
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/vw3"
+                    android:background="@drawable/join_dt"
+                    android:layout_below="@id/vw2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_joined"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:textColor="#CC000000"
+                    android:layout_alignTop="@id/vw3"
+                    android:layout_alignBottom="@id/vw3"
+                    android:layout_toEndOf="@id/vw3"/>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:id="@+id/toolbar_bet"
+                    android:background="@color/colorPrimary"
+                    app:navigationIcon="@drawable/arrow_back"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/current_bet"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="3dp"
+                android:elevation="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/capture"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/home_icon"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/away_icon"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/h_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CC000000"
+                        android:layout_marginTop="2dp"
+                        app:layout_constraintLeft_toLeftOf="@id/home_icon"
+                        app:layout_constraintRight_toRightOf="@id/home_icon"
+                        app:layout_constraintTop_toBottomOf="@id/home_icon" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/away_icon"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="25dp"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/home_icon"
+                        app:layout_constraintRight_toRightOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/a_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CC000000"
+                        android:layout_marginTop="2dp"
+                        app:layout_constraintLeft_toLeftOf="@id/away_icon"
+                        app:layout_constraintRight_toRightOf="@id/away_icon"
+                        app:layout_constraintTop_toBottomOf="@id/away_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/match_date"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="18sp"
+                        app:layout_constraintRight_toLeftOf="@id/away_icon"
+                        app:layout_constraintLeft_toRightOf="@id/home_icon"
+                        app:layout_constraintTop_toTopOf="@id/home_icon"
+                        app:layout_constraintBottom_toBottomOf="@id/home_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/match_time"
+                        android:textSize="16sp"
+                        app:layout_constraintRight_toLeftOf="@id/away_icon"
+                        app:layout_constraintLeft_toRightOf="@id/home_icon"
+                        app:layout_constraintTop_toBottomOf="@id/match_date"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/match_tip_current"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:paddingStart="35dp"
+                        android:paddingEnd="35dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/textblue_bg"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/home_icon"/>
+
+                    <View
+                        android:id="@+id/prd_status"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/pending010"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adView"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/ads_banner_units"
+                android:layout_below="@id/current_bet"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true">
+
+            </com.google.android.gms.ads.AdView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/previous_prd"
+                android:layout_marginTop="5dp"
+                android:text="More from the User :"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:paddingStart="8dp"
+                android:paddingEnd="1dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@color/gray"
+                android:layout_below="@id/adView"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_tip_user"
+                android:layout_marginTop="10dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="0.8dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@id/previous_prd"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:theme="@style/MyBar"
+        android:layout_gravity="center"
+        android:background="@drawable/handler_bg"
+        android:id="@+id/prediction_detail_bar"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_post"
+        app:maxImageSize="35dp"
+        android:theme="@style/myFloating"
+        android:src="@drawable/fb01"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue2"
+        android:layout_marginBottom="16dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

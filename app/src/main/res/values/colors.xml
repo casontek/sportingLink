@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42a5f5</color>
+    <color name="colorPrimaryDark">#0077c2</color>
+    <color name="colorPrimaryLight">#80d6ff</color>
+    <color name="colorAccent">#ff1744</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorSecondary">#ff1744</color>
+    <color name="colorSecondaryDark">#9b0000</color>
+
+    <!--
+    <color name="colorPrimary">@android:color/holo_red_light</color>
+    <color name="colorPrimaryDark">@android:color/holo_red_dark</color>
+    <color name="colorAccent">#03DAC5</color>
+    -->
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="black">#000000</color>
+    <color name="lighter">#F8F8F8</color>
+    <color name="dark_gray">@color/material_on_surface_disabled</color>
+    <color name="light_gray">@color/cardview_shadow_end_color</color>
+    <color name="blue">#2196F3</color>
+    <color name="blue2">#3F51B5</color>
+    <color name="body">#333333</color>
+    <color name="yll">#FFCA28</color>
+    <!--Ads color -->
+    <color name="ads_bck">@color/browser_actions_bg_grey</color>
+</resources>

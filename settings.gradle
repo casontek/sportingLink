@@ -1,0 +1,2 @@
+rootProject.name='BetLink Sports'
+include ':app', ':nativetemplates'

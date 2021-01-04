@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tm_cir"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:id="@+id/video_play"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"/>
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/play_button"
+        android:layout_alignTop="@id/tm_cir"
+        android:background="@drawable/play"
+        app:layout_constraintEnd_toEndOf="@id/tm_cir"
+        app:layout_constraintStart_toStartOf="@id/tm_cir"
+        app:layout_constraintTop_toTopOf="@id/tm_cir"
+        app:layout_constraintBottom_toBottomOf="@id/tm_cir"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_title"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/browser_actions_text_color"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tm_cir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_date"
+        android:gravity="right"
+        android:text="27/06/2020"
+        android:padding="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/lighter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/video_title"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/tipsFragment">
+
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.mycornership.betlink.fragments.TipsFragment"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.mycornership.betlink.fragments.NewsFragment"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.mycornership.betlink.fragments.MatchFragment"
+        tools:layout="@layout/fragment_match" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.mycornership.betlink.fragments.VideoFragment"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mycornership.betlink.fragments.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/celebrantFragment"
+        android:name="com.mycornership.betlink.fragments.CelebrantFragment"
+        android:label="CelebrantFragment" />
+
+</navigation>

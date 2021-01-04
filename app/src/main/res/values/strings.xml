@@ -1,0 +1,372 @@
+<resources>
+    <string name="app_name">Sporting Link</string>
+    <string name="title_tips">Tips</string>
+    <string name="title_news">News</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_video">Profile</string>
+    <string name="title_discus">discussion</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">BetLink sporting</string>
+    <string name="title_news2">betLink soccer sports highlights</string>
+    <string name="title_videos">betLink  soccer sports videos</string>
+    <string name="title_celeb">Birthday</string>
+    <string name="title_celebs">BetLink sports Birthday Celebrants</string>
+    <string name="ads_banner">ca-app-pub-8324355921112909/8865328587</string>
+    <string name="phone">Phone Number</string>
+    <string name="user">Username</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="or">Or</string>
+    <string name="chika">Pope Chika</string>
+    <string name="total_post">Total Post</string>
+    <string name="total_win">Post Won</string>
+    <string name="ttl">0</string>
+    <string name="ttw2">0</string>
+    <string name="post_tip">Predict Match</string>
+    <string name="wallet">Wallet</string>
+    <string name="wallet_amt">$0.0</string>
+    <string name="today_celeb">Daily Birthday Celebrants</string>
+    <string name="addtip">Add Match Prediction Tip</string>
+    <string name="league">League/Tournament:</string>
+    <string name="match">Daily Match:</string>
+    <string name="tip">Prediction  Tip:</string>
+    <string name="hint">Tip hint(Optional):</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="pass">Password</string>
+    <string name="sign_up">New here? Sign-Up</string>
+    <string name="dsc">Create BetLink account</string>
+    <string name="email">Email address (Optional)</string>
+    <string name="dsc2">Enter the phone number you registered with to recover your password</string>
+    <string name="rec">Continue</string>
+    <string name="phone1">Enter phone number</string>
+    <string name="dsc3">"Enter the code sent to your phone number to confirm "</string>
+    <string name="code">Enter code</string>
+    <string name="news_pass">Enter New password</string>
+    <string name="confirm">Confirm</string>
+    <string name="dsc4">Enter the code sent to your phone number to confirm registration</string>
+    <string name="detail">Short description to support your prediction</string>
+    <string name="more">Related videos</string>
+    <string name="logout">Sign-Out</string>
+    <string name="username">Enter your username</string>
+    <string name="wlc1">welcome to sportingLink</string>
+    <string name="cash_out_amt">Amount( 1000 = 1$)</string>
+    <string name="submit">Submit</string>
+    <string name="access_token">EAAU14z8lNVoBAEz7nONud9ym5XoFnJ1FdBpZCvJInmwaRrGUHTM1f4vDIv6oL6SIBoSg6kXs7XV67iJaX0eEFulcWn4LTpZCyFoMtDC94nTeroNZANTpqztVpA6ZAscduXjlZBuc4ZBUzqAWhZCZB5DPF5TmwdsXolnUZBH2cVOSWRXwMBGl6eLht</string>
+    <string name="facebook_page_id">102576254608581</string>
+    <string name="update_">Update</string>
+    <string name="card_no">Enter card no</string>
+    <string name="expire_date">Expire date</string>
+    <string name="security_code_cvv">CVV</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="default_notification_chanel_id">sportinglink_notification</string>
+    <string name="no_celeb">No special Celebrant in our Calendar for Today . \n  @sportingLink We Celebrate All Birthdays for Today.</string>
+    <string name="achievement">Achievement</string>
+    <string name="ads_native_units">ca-app-pub-8324355921112909/3421430212</string>
+    <string name="ads_banner_units">ca-app-pub-8324355921112909/8865328587</string>
+    <string name="category_tip">Category</string>
+    <string name="montly_sub">Monthly Subscription of $4.0 for Premium tips</string>
+    <string-array name="empty_spinner">
+        <item>select item</item>
+    </string-array>
+    <string-array name="tips">
+        <item>home win</item>
+        <item>Away win</item>
+        <item>Home win or draw</item>
+        <item>Away win or draw</item>
+        <item>First half draw</item>
+        <item>Draw game</item>
+        <item>Home to score</item>
+        <item>Away to score</item>
+        <item>Both to score</item>
+        <item>Home score HT</item>
+        <item>Away score HT</item>
+        <item>Both score HT</item>
+        <item>Score over 1.5</item>
+        <item>Score over 2.5</item>
+        <item>Score over 4.5</item>
+        <item>Score under 1.5</item>
+        <item>Score under 2.5</item>
+        <item>Score under 4.5</item>
+        <item>5mins score</item>
+        <item>10mins score</item>
+        <item>20mins score</item>
+        <item>15mins draw</item>
+        <item>20mins draw</item>
+        <item>30mins draw</item>
+        <item>Home red card</item>
+        <item>Away red card</item>
+        <item>Yellow card 4</item>
+        <item>Yellow card 8</item>
+        <item>Corner over 6</item>
+        <item>Corner over 8</item>
+        <item>Correct Score</item>
+    </string-array>
+    <string-array name="countries_code">
+        <item>Select Country Code</item>
+        <item>Afghanistan +93</item>
+        <item>Albania +355</item>
+        <item>Algeria +213</item>
+        <item>Aland Island +358</item>
+        <item>American Samoa +1684</item>
+        <item>Andorra +376</item>
+        <item>Angola +244</item>
+        <item>Anguilla +1264</item>
+        <item>Antigua Barbuda +1268</item>
+        <item>Argentina +54</item>
+        <item>Armenia +374</item>
+        <item>Aruba +297</item>
+        <item>Australia +61</item>
+        <item>Austria +43</item>
+        <item>Azerbaijan +994</item>
+        <item>Bahamas +1242</item>
+        <item>Bahrain +973</item>
+        <item>Bangladesh +880</item>
+        <item>Barbados  +1246</item>
+        <item>Belarus +375</item>
+        <item>Belgium +32</item>
+        <item>Belize +501</item>
+        <item>Benin +229</item>
+        <item>Bermuda +1441</item>
+        <item>Bhutan +975</item>
+        <item>Bolivia +591</item>
+        <item>Bosnia and Herzegovina +387 </item>
+        <item>Botswana +267</item>
+        <item>Brazil +55</item>
+        <item>British Indian Ocean territory +246</item>
+        <item>British Virgin Islands +1284</item>
+        <item>Brunei +673</item>
+        <item>Bulgaria +359</item>
+        <item>Burkina Faso +226</item>
+        <item>Burundi +256</item>
+        <item>Cambodia +855</item>
+        <item>Cameroon +237</item>
+        <item>Canada +1</item>
+        <item>Cape Verde +238</item>
+        <item>Caribbean Netherlands +599</item>
+        <item>Cayman Islands +1345</item>
+        <item>Central African Republic</item>
+        <item>Chad +235</item>
+        <item>Chile +56</item>
+        <item>China +86</item>
+        <item>Christmas Island +61</item>
+        <item>Cocos Islands +61</item>
+        <item>Colombia +57</item>
+        <item>Comoros +269</item>
+        <item>Congo(DRC) +243</item>
+        <item>Congo(Republic) Brazzaville +242</item>
+        <item>Cook Islands +682</item>
+        <item>Costa Rica +506</item>
+        <item>Cote d Ivoire +225</item>
+        <item>Croatia +385</item>
+        <item>Cuba +53</item>
+        <item>Curacao +599</item>
+        <item>Cyprus +357</item>
+        <item>Czech Republic +420</item>
+        <item>Denmark +45</item>
+        <item>Djibouti +253</item>
+        <item>Dominica +1767</item>
+        <item>Dominican Republic +1</item>
+        <item>Ecuador +593</item>
+        <item>Egypt +20</item>
+        <item>El Salvador +503</item>
+        <item>Equatorial Guinea +240</item>
+        <item>Eritrea +291</item>
+        <item>Estonia +372</item>
+        <item>Ethiopia +251</item>
+        <item>Falkland Islands +500</item>
+        <item>Faeroe Islands +298</item>
+        <item>Fiji +679</item>
+        <item>Finland +358</item>
+        <item>France +33</item>
+        <item>French Guiana +594</item>
+        <item>French Polynesia +689</item>
+        <item>Gabon +241</item>
+        <item>Gambia +220</item>
+        <item>Georgia +995</item>
+        <item>Germany +49</item>
+        <item>Ghana +233</item>
+        <item>Gibraltar +350</item>
+        <item>Greece +30</item>
+        <item>Greenland +299</item>
+        <item>Grenada +1473</item>
+        <item>Guadeloupe +590</item>
+        <item>Guam +1671</item>
+        <item>Guatemala +502</item>
+        <item>Guernsey +44</item>
+        <item>Guinea +224</item>
+        <item>Guinea-Bissau +245</item>
+        <item>Guyana +592</item>
+        <item>Haiti +509</item>
+        <item>Honduras +504</item>
+        <item>Hong Kong +852</item>
+        <item>Hungary +36</item>
+        <item>Iceland +354</item>
+        <item>India +91</item>
+        <item>Indonesia +62</item>
+        <item>Iran +98</item>
+        <item>Iraq +964</item>
+        <item>Ireland +353</item>
+        <item>Isle of man +44</item>
+        <item>Israel +972</item>
+        <item>Italy +39</item>
+        <item>Jamaica +1876</item>
+        <item>Japan +81</item>
+        <item>Jersey +44</item>
+        <item>Jordan +962</item>
+        <item>Kazakhstan +7</item>
+        <item>Kenya +254</item>
+        <item>Kiribati +686</item>
+        <item>Kosovo +383</item>
+        <item>Kuwait +965</item>
+        <item>Kyrgyzstan +996</item>
+        <item>Laos +856</item>
+        <item>Latvia +371</item>
+        <item>Lebanon +961</item>
+        <item>Lesotho +266</item>
+        <item>Liberia +231</item>
+        <item>Libya +218</item>
+        <item>Liechtenstein +423</item>
+        <item>Lithuania +370</item>
+        <item>Luxembourg +352</item>
+        <item>Macao +853</item>
+        <item>Macedonia +389</item>
+        <item>Madagascar +261</item>
+        <item>Malawi +265</item>
+        <item>Malaysia +60</item>
+        <item>Maldives +960</item>
+        <item>Mali +223</item>
+        <item>Malta +356</item>
+        <item>Marshal Islands +692</item>
+        <item>Martinique +596</item>
+        <item>Mauritania +222</item>
+        <item>Mauritius +230</item>
+        <item>Mayotte +262</item>
+        <item>Mexico +62</item>
+        <item>Micronesia +691</item>
+        <item>Moldova (Republic of Moldova) +373</item>
+        <item>Monaco +377</item>
+        <item>Mongolia +976</item>
+        <item>Montenegro +382</item>
+        <item>Montserrat +1664</item>
+        <item>Morocco +212</item>
+        <item>Mozambique +258</item>
+        <item>Myanmar (Burma) +95</item>
+        <item>Namibia +264</item>
+        <item>Nauru +674</item>
+        <item>Nepal +977</item>
+        <item>Netherlands +31</item>
+        <item>New Caledonia +687</item>
+        <item>New Zealand +64</item>
+        <item>Nicaragua +505</item>
+        <item>Niger +227</item>
+        <item>Nigeria +234</item>
+        <item>Niue +683</item>
+        <item>Norfolk Island +672</item>
+        <item>North Korea +850</item>
+        <item>Northern Mariana Islands +1670</item>
+        <item>Norway +47</item>
+        <item>Oman +968</item>
+        <item>Pakistan +92</item>
+        <item>Palau +680</item>
+        <item>Palestine +970</item>
+        <item>Panama +507</item>
+        <item>Papua New Guinea +675</item>
+        <item>Paraguay +595</item>
+        <item>Peru +51</item>
+        <item>Philippines +63</item>
+        <item>Poland +48</item>
+        <item>Portugal +351</item>
+        <item>Puerto Rico +1</item>
+        <item>Qatar +974</item>
+        <item>Reunion +262</item>
+        <item>Romania +40</item>
+        <item>Russia +7</item>
+        <item>Rwanda +250</item>
+        <item>Saint Bartholemy +590</item>
+        <item>Saint Helena +290</item>
+        <item>Saint Kilts and Nevis +1869</item>
+        <item>Saint Lucia +1758</item>
+        <item>Saint Martin +590</item>
+        <item>Saint Pierre and Miquela +508</item>
+        <item>Saint Vincent and the Grenadines +1784</item>
+        <item>Samoa +685</item>
+        <item>San Mariano +378</item>
+        <item>Sao Tom Principe +239</item>
+        <item>Saudi Arabia +966</item>
+        <item>Senegal +221</item>
+        <item>Serbia +381</item>
+        <item>Seychelles +248</item>
+        <item>Sierra Leon +232</item>
+        <item>Singapore +64</item>
+        <item>Saint Maartin +1721</item>
+        <item>Slovakia +421</item>
+        <item>Slovenia +386</item>
+        <item>Solomon Islands +677</item>
+        <item>Somalia +252</item>
+        <item>South Africa +27</item>
+        <item>South Korea +82</item>
+        <item>South Sudan +211</item>
+        <item>Spain +34</item>
+        <item>Sri Lanka +94</item>
+        <item>Sudan +249</item>
+        <item>Suriname +597</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland +268</item>
+        <item>Sweden +46</item>
+        <item>Switzerland +41</item>
+        <item>Syria +963</item>
+        <item>Taiwan +886</item>
+        <item>Tajikistan +992</item>
+        <item>Tanzania +255</item>
+        <item>Thailand +66</item>
+        <item>Timor-Leste +670</item>
+        <item>Togo +228</item>
+        <item>Tokelau +690</item>
+        <item>Tonga +676</item>
+        <item>Trinidad and Tobago +1868</item>
+        <item>Tunisia +216</item>
+        <item>Turkey +90</item>
+        <item>Turkmenistan +993</item>
+        <item>Turks and Calcos Islands +1649</item>
+        <item>Tuvalu +688</item>
+        <item>U.S Virgin Islands +1340</item>
+        <item>Uganda +256</item>
+        <item>Ukraine +380</item>
+        <item>United Arab Emirates </item>
+        <item>United Kingdom +44</item>
+        <item>United State +1</item>
+        <item>Uruguay +598</item>
+        <item>Uzbekistan +998</item>
+        <item>Vanuatu +678</item>
+        <item>Vatican City +39</item>
+        <item>Venezuela +58</item>
+        <item>Vietnam +84</item>
+        <item>Wallis and Futuna +681</item>
+        <item>Western Sahara +212</item>
+        <item>Yemen +967</item>
+        <item>Zambia +260</item>
+        <item>Zimbabwe +263</item>
+    </string-array>
+    <string-array name="tournaments">
+        <item>empty tournament</item>
+    </string-array>
+
+    <string-array name="status_tip">
+        <item>pending</item>
+        <item>won</item>
+        <item>lost</item>
+    </string-array>
+    <string-array name="grade_tip">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+    <string-array name="tip_category">
+        <item>basic</item>
+        <item>standard</item>
+        <item>premium</item>
+    </string-array>
+</resources>

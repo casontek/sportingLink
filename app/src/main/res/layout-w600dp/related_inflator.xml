@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="140dp"
+                android:id="@+id/related_image_handle"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/related_title"
+                android:layout_alignParentTop="true"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:fontFamily="@font/roboto_medium"
+                android:lines="2"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/related_image_handle"
+                android:layout_alignParentEnd="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/related_source"
+                android:layout_marginTop="6dp"
+                android:maxWidth="120dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:textSize="18sp"
+                android:layout_below="@id/related_title"
+                android:layout_toStartOf="@id/related_source"
+                android:layout_toEndOf="@id/related_image_handle"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/related_time"
+                android:layout_marginTop="6dp"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:layout_below="@id/related_title"
+                android:layout_toEndOf="@id/related_source"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

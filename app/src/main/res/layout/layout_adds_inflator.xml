@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.gms.ads.formats.UnifiedNativeAdView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ad_view"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlt1">
+
+                <TextView
+                    android:id="@+id/ad_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/ad_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/ad_headline"/>
+
+            </RelativeLayout>
+
+            <com.google.android.gms.ads.formats.MediaView
+                android:id="@+id/ad_media"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rlt1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ad_media">
+
+                <TextView
+                    android:id="@+id/ad_attribution"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/txt_round"
+                    android:gravity="center"
+                    android:text="Ad"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/ad_advertiser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/ad_attribution"
+                    android:layout_alignBottom="@id/ad_attribution"
+                    android:layout_alignTop="@id/ad_attribution"
+                    android:layout_toStartOf="@id/ad_call_to_action"/>
+
+                <Button
+                    android:id="@+id/ad_call_to_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="25dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0dp"
+                    android:elevation="0dp"
+                    style="@style/myButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.google.android.gms.ads.formats.UnifiedNativeAdView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/gray"
+        android:layout_below="@id/ad_view"/>
+
+</RelativeLayout>

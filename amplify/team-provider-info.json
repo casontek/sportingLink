@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-sportinglink-prod-145905-authRole",
+            "UnauthRoleArn": "arn:aws:iam::217423056542:role/amplify-sportinglink-prod-145905-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::217423056542:role/amplify-sportinglink-prod-145905-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-sportinglink-prod-145905-deployment",
+            "UnauthRoleName": "amplify-sportinglink-prod-145905-unauthRole",
+            "StackName": "amplify-sportinglink-prod-145905",
+            "StackId": "arn:aws:cloudformation:us-east-1:217423056542:stack/amplify-sportinglink-prod-145905/5bda6bb0-d8b6-11ea-9bc1-0a87c278b5b5",
+            "AmplifyAppId": "dt0hbhqma3gug"
+        },
+        "categories": {
+            "auth": {
+                "sportinglink": {}
+            }
+        }
+    }
+}
